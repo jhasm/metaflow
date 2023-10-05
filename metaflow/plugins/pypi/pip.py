@@ -166,7 +166,7 @@ class Pip(object):
         prefix = self.micromamba.path_to_environment(id_)
         metadata_file = METADATA_FILE.format(prefix=prefix)
         with open(metadata_file, "r") as file:
-            return json.loads(file.read())
+            return json.load(file)
 
     def extra_index_urls(self, prefix):
         # get extra index urls from Pip conf
