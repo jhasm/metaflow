@@ -21,13 +21,13 @@ class ResourcesDecorator(StepDecorator):
 
     Parameters
     ----------
-    cpu : int, default: 1
+    cpu : int, default 1
         Number of CPUs required for this step.
-    gpu : int, default: 0
+    gpu : int, default 0
         Number of GPUs required for this step.
-    memory : int, default: 4096
+    memory : int, default 4096
         Memory size (in MB) required for this step.
-    shared_memory : int, optional, default: None
+    shared_memory : int, optional, default None
         The value for the size (in MiB) of the /dev/shm volume for this step.
         This parameter maps to the `--shm-size` option in Docker.
     """
